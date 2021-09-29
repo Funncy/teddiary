@@ -23,7 +23,7 @@ const AppTabComponent = () => {
 
 export const RootNavigator = () => {
   return (
-    <AuthStack.Navigator>
+    <AuthStack.Navigator screenOptions={{headrShown: false}}>
       {isLoggedId ? (
         <AuthStack.Screen name="Main" component={AppTabComponent} />
       ) : (
